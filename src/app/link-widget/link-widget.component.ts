@@ -8,7 +8,9 @@ import {Component, Input, OnInit} from '@angular/core';
 export class LinkWidgetComponent implements OnInit {
 
   @Input() widget: object;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class ListWidgetComponent implements OnInit {
   listItems = [];
   @Input() widget: any;
+
   constructor() {
   }
 

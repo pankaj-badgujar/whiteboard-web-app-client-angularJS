@@ -15,6 +15,7 @@ export class YoutubeWidgetComponent implements OnInit {
   getVideoURL() {
     return this.sanitizer.bypassSecurityTrustResourceUrl(this.widget.url);
   }
+
   ngOnInit() {
   }
 

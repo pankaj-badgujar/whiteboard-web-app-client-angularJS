@@ -1,19 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import WidgetServiceClient from '../services/WidgetServiceClient';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-widget-list-component',
-  templateUrl: './widget-list-component.component.html',
+  templateUrl: './widget-list.component.html',
   styleUrls: ['./widget-list.component.css']
 })
-export class WidgetListComponentComponent implements OnInit {
+export class WidgetListComponent implements OnInit {
   widgets = [];
   courseId = '';
   moduleId = '';
   lessonId = '';
   topicId = '';
-  constructor(private activatedRoute: ActivatedRoute, private widgetService: WidgetServiceClient) { }
+
+  constructor(private activatedRoute: ActivatedRoute, private widgetService: WidgetServiceClient) {
+  }
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(
@@ -25,7 +27,7 @@ export class WidgetListComponentComponent implements OnInit {
         this.widgetService.findAllWidgetsForTopic(this.topicId)
           .then(widgets => this.widgets = widgets);
       }
-      );
+    );
   }
 
 }

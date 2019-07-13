@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { ParagraphWidgetComponent } from './paragraph-widget.component';
+import {ParagraphWidgetComponent} from './paragraph-widget.component';
 
 describe('ParagraphWidgetComponent', () => {
   let component: ParagraphWidgetComponent;
@@ -8,9 +8,9 @@ describe('ParagraphWidgetComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ParagraphWidgetComponent ]
+      declarations: [ParagraphWidgetComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

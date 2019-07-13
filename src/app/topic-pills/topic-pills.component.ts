@@ -1,21 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import TopicServiceClient from '../services/TopicServiceClient';
 
 @Component({
   selector: 'app-topic-pills-component',
-  templateUrl: './topic-pills-component.component.html',
-  styleUrls: ['./topic-pills-component.component.css']
+  templateUrl: './topic-pills.component.html',
+  styleUrls: ['./topic-pills.component.css']
 })
-export class TopicPillsComponentComponent implements OnInit {
+export class TopicPillsComponent implements OnInit {
 
   topics = [];
   courseId = '';
   moduleId = '';
   lessonId = '';
   selectedTopic = '';
+
   constructor(private activatedRoute: ActivatedRoute, private topicService: TopicServiceClient) {
   }
+
   ngOnInit() {
     this.activatedRoute.params.subscribe(
       params => {

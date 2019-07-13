@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import CourseServiceClient from '../services/CourseServiceClient';
 
 @Component({
   selector: 'app-course-grid-component',
-  templateUrl: './course-grid-component.component.html',
-  styleUrls: ['./course-grid-component.component.css']
+  templateUrl: './course-grid.component.html',
+  styleUrls: ['./course-grid.component.css']
 })
-export class CourseGridComponentComponent implements OnInit {
+export class CourseGridComponent implements OnInit {
 
   constructor(private courseService: CourseServiceClient) {
   }

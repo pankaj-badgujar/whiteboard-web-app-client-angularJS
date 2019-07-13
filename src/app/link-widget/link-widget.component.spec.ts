@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { LinkWidgetComponent } from './link-widget.component';
+import {LinkWidgetComponent} from './link-widget.component';
 
 describe('LinkWidgetComponent', () => {
   let component: LinkWidgetComponent;
@@ -8,9 +8,9 @@ describe('LinkWidgetComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LinkWidgetComponent ]
+      declarations: [LinkWidgetComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

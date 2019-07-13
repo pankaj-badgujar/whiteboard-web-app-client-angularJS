@@ -1,20 +1,20 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {YoutubeWidgetComponent} from './youtube-widget.component';
+import {LessonTabsComponent} from './lesson-tabs.component';
 
-describe('YoutubeWidgetComponent', () => {
-  let component: YoutubeWidgetComponent;
-  let fixture: ComponentFixture<YoutubeWidgetComponent>;
+describe('LessonTabsComponent', () => {
+  let component: LessonTabsComponent;
+  let fixture: ComponentFixture<LessonTabsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [YoutubeWidgetComponent]
+      declarations: [LessonTabsComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(YoutubeWidgetComponent);
+    fixture = TestBed.createComponent(LessonTabsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

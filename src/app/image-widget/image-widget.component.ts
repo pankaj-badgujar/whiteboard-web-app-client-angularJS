@@ -7,7 +7,9 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ImageWidgetComponent implements OnInit {
   @Input() widget: object;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

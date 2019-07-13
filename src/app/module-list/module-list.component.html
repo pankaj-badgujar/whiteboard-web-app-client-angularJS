@@ -1,0 +1,14 @@
+<ul class="list-group">
+  <li class="list-group-item bg-light">Modules</li>
+  <a *ngFor="let module of modules"
+     routerLink="/course/{{courseId}}/module/{{module.id}}">
+    <li
+      (click)="selectModule(module)"
+
+      [ngClass]="{'active': module === selectedModule}"
+      class="list-group-item">
+      {{module.title}}
+    </li>
+  </a>
+
+</ul>

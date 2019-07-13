@@ -4,10 +4,10 @@ import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-module-list-component',
-  templateUrl: './module-list-component.component.html',
-  styleUrls: ['./module-list-component.component.css']
+  templateUrl: './module-list.component.html',
+  styleUrls: ['./module-list.component.css']
 })
-export class ModuleListComponentComponent implements OnInit {
+export class ModuleListComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private moduleService: ModuleServiceClient) {
   }
