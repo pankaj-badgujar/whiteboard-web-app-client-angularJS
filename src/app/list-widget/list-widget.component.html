@@ -1,0 +1,23 @@
+<div
+  [ngSwitch]="widget.listType"
+  class="row rounded giveColor p-4">
+
+  <div *ngSwitchCase="'unordered'">
+    <ul>
+      <li *ngFor="let item of listItems">
+        {{item}}
+      </li>
+    </ul>
+  </div>
+
+  <div *ngSwitchCase="'ordered'">
+    <ol>
+      <li *ngFor="let item of listItems">
+        {{item}}
+      </li>
+    </ol>
+  </div>
+
+</div>
+
+

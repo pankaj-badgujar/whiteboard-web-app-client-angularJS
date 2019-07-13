@@ -1,0 +1,13 @@
+<div
+  class="p-4 giveColor rounded row"
+  [ngSwitch]="widget.size">
+  <div *ngSwitchCase="1">
+    <h1>{{widget.text}}</h1>
+  </div>
+  <div *ngSwitchCase="2">
+    <h2>{{widget.text}}</h2>
+  </div>
+  <div *ngSwitchCase="3">
+    <h3>{{widget.text}}</h3>
+  </div>
+</div>

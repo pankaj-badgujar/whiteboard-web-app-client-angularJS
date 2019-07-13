@@ -1,0 +1,43 @@
+<div class="container">
+  <h2>{{title}}</h2>
+  <ul class="list-group" title="list of items">
+    <li class="list-group-item" *ngFor="let todo of favorites">{{todo.title}}
+
+      <button class="btn btn-danger float-right"(click) = "deleteTodo(favorites, todo)">
+        Delete Todo
+      </button>
+
+      <button (click)="makeUnfavorite(todo)" class="btn btn-light float-right mr-2">Unfavorite</button>
+    </li>
+
+
+    <li class="list-group-item" *ngFor="let doc of todos">
+      <span [hidden]="doc.editing" (click)="doc.editing = true">{{doc.title}}</span>
+      <input [hidden]="!doc.editing"
+             (keyup.enter)="doc.editing = false"
+             [(ngModel)]="doc.title" />
+
+      <span class="badge badge-primary ml-2"> {{doc.priority}}</span>
+
+      <span class="mx-3">{{doc.dueDate | date: 'medium' }}</span>
+
+      <button class="btn btn-danger float-right" (click) = "deleteTodo(todos, doc)">
+        Delete Todo
+      </button>
+
+      <button  (click)="makeFavorite(doc)" class="btn btn-warning float-right mr-2">Favorite</button>
+      <button (click)="updatePriority(doc , +1)"
+              class="btn badge-info float-right mr-2">
+        Vote Down
+      </button>
+      <button (click)="updatePriority(doc, -1)"
+              class="btn badge-info float-right mr-2">
+        Vote Up
+      </button>
+
+    </li>
+  </ul>
+  <button class="btn btn-success" (click)="addTodo({title : 'New Todo', priority : 1, editing : false})">
+    Add Todo
+  </button>
+</div>

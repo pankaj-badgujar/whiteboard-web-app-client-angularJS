@@ -1,0 +1,11 @@
+<ul class="nav nav-pills">
+  <li
+    (click)="selectTopic(topic)"
+    *ngFor="let topic of topics"
+    class="nav-item mx-2">
+    <a
+      routerLink="/course/{{courseId}}/module/{{moduleId}}/lesson/{{lessonId}}/topic/{{topic.id}}"
+      [ngClass]="{'active' :  topic === selectedTopic}"
+      class="nav-link">{{topic.title}}</a>
+  </li>
+</ul>
