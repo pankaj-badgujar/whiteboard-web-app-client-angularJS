@@ -26,6 +26,7 @@ import { ParagraphWidgetComponent } from './paragraph-widget/paragraph-widget.co
 import { ListWidgetComponent } from './list-widget/list-widget.component';
 import { LinkWidgetComponent } from './link-widget/link-widget.component';
 import { ImageWidgetComponent } from './image-widget/image-widget.component';
+import { YoutubeWidgetComponent } from './youtube-widget/youtube-widget.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ImageWidgetComponent } from './image-widget/image-widget.component';
     ParagraphWidgetComponent,
     ListWidgetComponent,
     LinkWidgetComponent,
-    ImageWidgetComponent
+    ImageWidgetComponent,
+    YoutubeWidgetComponent
   ],
   imports: [
     BrowserModule,

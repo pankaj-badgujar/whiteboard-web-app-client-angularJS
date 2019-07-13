@@ -1,8 +1,8 @@
 <div
-  [ngSwitch]="widget.listType"
+  [ngSwitch]="widget.ordered"
   class="row rounded giveColor p-4">
 
-  <div *ngSwitchCase="'unordered'">
+  <div *ngSwitchCase="false">
     <ul>
       <li *ngFor="let item of listItems">
         {{item}}
@@ -10,7 +10,7 @@
     </ul>
   </div>
 
-  <div *ngSwitchCase="'ordered'">
+  <div *ngSwitchCase="true">
     <ol>
       <li *ngFor="let item of listItems">
         {{item}}

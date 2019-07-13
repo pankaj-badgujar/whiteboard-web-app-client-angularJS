@@ -7,7 +7,8 @@
     <app-list-widget *ngIf="widget.type === 'LIST'" [widget]="widget"></app-list-widget>
     <app-link-widget *ngIf="widget.type === 'LINK'" [widget]="widget"></app-link-widget>
     <app-image-widget *ngIf="widget.type === 'IMAGE'" [widget]="widget"></app-image-widget>
-  <br>
+    <app-youtube-widget *ngIf="widget.type === 'YOUTUBE'" [widget]="widget"></app-youtube-widget>
+    <br>
   </li>
 </ul>
 
