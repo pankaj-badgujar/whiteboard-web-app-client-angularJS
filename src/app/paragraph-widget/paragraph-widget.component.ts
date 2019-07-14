@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ParagraphWidgetComponent implements OnInit {
 
-  @Input() widget: object;
+  @Input() widget: any;
 
   constructor() {
   }

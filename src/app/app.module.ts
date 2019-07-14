@@ -30,7 +30,7 @@ import {YoutubeWidgetComponent} from './youtube-widget/youtube-widget.component'
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
+      RegisterComponent,
     ProfileComponent,
     CourseGridComponent,
     ModuleListComponent,
