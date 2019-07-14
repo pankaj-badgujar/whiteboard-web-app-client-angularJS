@@ -13,7 +13,7 @@ export class TopicPillsComponent implements OnInit {
   courseId = '';
   moduleId = '';
   lessonId = '';
-  selectedTopic = '';
+  topicId = '';
 
   constructor(private activatedRoute: ActivatedRoute, private topicService: TopicServiceClient) {
   }
@@ -24,13 +24,10 @@ export class TopicPillsComponent implements OnInit {
         this.courseId = params.courseId;
         this.moduleId = params.moduleId;
         this.lessonId = params.lessonId;
+        this.topicId = params.topicId;
         this.topicService.findAllTopicsForLesson(this.lessonId)
           .then(topics => this.topics = topics);
       }
     );
-  }
-
-  selectTopic(topic) {
-    this.selectedTopic = topic;
   }
 }

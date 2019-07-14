@@ -14,14 +14,17 @@ export class ModuleListComponent implements OnInit {
 
   modules = [];
   courseId = '';
-  selectedModule = '';
+  moduleId = '';
 
   ngOnInit() {
-    this.activatedRoute.params.subscribe(params => this.courseId = params.courseId);
-    this.moduleService.findAllModulesForCourse(this.courseId)
-      .then(modules => this.modules = modules);
+    this.activatedRoute.params.subscribe(
+      params => {
+        this.courseId = params.courseId;
+        this.moduleId = params.moduleId ;
+        this.moduleService.findAllModulesForCourse(this.courseId)
+          .then(modules => this.modules = modules);
+      }
+      );
   }
 
-  selectModule = (module) =>
-    this.selectedModule = module
 }

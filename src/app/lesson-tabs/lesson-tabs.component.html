@@ -3,8 +3,7 @@
     *ngFor="let lesson of lessons"
     class="nav-item">
     <a
-      (click)="selectLesson(lesson)"
-      [ngClass]="{'active': lesson === selectedLesson}"
+      [ngClass]="{'active': lesson.id == lessonId}"
       class="nav-link"
       routerLink="/course/{{courseId}}/module/{{moduleId}}/lesson/{{lesson.id}}">
       {{lesson.title}}
