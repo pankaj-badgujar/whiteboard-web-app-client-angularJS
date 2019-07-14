@@ -8,4 +8,7 @@ export default class ModuleServiceClient {
   findAllModulesForCourse = (courseId) =>
     fetch(`http://localhost:8080/api/courses/${courseId}/modules`)
       .then(response => response.json())
+  findModuleById = (moduleId) =>
+    fetch(`http://localhost:8080/api/modules/${moduleId}`)
+      .then(response => response.json())
 }

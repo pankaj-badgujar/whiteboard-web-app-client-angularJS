@@ -5,7 +5,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {LoginComponent} from './login/login.component';
 import {FormsModule} from '@angular/forms';
-import {WhiteBoardComponent} from './white-board/white-board.component';
 import {RegisterComponent} from './register/register.component';
 import {ProfileComponent} from './profile/profile.component';
 import CourseServiceClient from './services/CourseServiceClient';
@@ -31,7 +30,6 @@ import {YoutubeWidgetComponent} from './youtube-widget/youtube-widget.component'
   declarations: [
     AppComponent,
     LoginComponent,
-    WhiteBoardComponent,
     RegisterComponent,
     ProfileComponent,
     CourseGridComponent,

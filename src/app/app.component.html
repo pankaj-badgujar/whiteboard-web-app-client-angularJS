@@ -1,4 +1,12 @@
 <div class="container">
+
+  <a
+    (click)="courseButtonActive = false"
+    [hidden]="!courseButtonActive"
+    routerLink="/course">
+    Course Grid
+  </a>
+
   <router-outlet></router-outlet>
 </div>
 
